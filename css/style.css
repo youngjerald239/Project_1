@@ -29,6 +29,10 @@ li{
     margin: 0;
   }
 
+  button{
+    display: none;
+  }
+
   @media only screen and (max-width: 500px) {
     /*shows elements in a column*/
     ul{
@@ -43,4 +47,23 @@ li{
     a{
       display: block;
     }
+
+    button{
+        /*makes the button visible*/
+        display: block;
+        
+        /*Style the button for navbar*/
+        padding: 2px;
+        font-size: 8px;
+        background-color: #AFE0FF;
+        border: none;
+        
+        /*outline none removes the default blue border that appears anytime you click on the button*/
+        outline: none;
+        
+        cursor: pointer;
+
+        /*this put the button on the left*/
+        align-self: flex-start;
+      }
   }
