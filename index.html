@@ -36,6 +36,13 @@
     <link rel="stylesheet" href="css/style.css" />
     <script src="js/webcomponents.js" defer></script>
     <script src="js/app.js" defer></script>
+    <style>
+      /* Make the image fully responsive */
+      .carousel-inner img {
+        width: 100%;
+        height: 100%;
+      }
+      </style>
   </head>
   <body>
     <nav>
@@ -56,10 +63,51 @@
         </li>
         <li>
           <!-- link four -->
-          <a href="#contacts"> Contacts </a>
+          <a href="#contact"> Contact Me </a>
+        </li>
+        <li>
+          <!-- link five -->
+          <a href="#Home"> Home </a>
         </li>
       </ul>
     </nav>
     <template-example></template-example>
+    <div id="demo" class="carousel slide" data-ride="carousel">
+      <ul class="carousel-indicators">
+        <li data-target="#demo" data-slide-to="0" class="active"></li>
+        <li data-target="#demo" data-slide-to="1"></li>
+        <li data-target="#demo" data-slide-to="2"></li>
+      </ul>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img src="https://images.unsplash.com/photo-1538481199705-c710c4e965fc?ixid=MnwxMjA3fDB8MHxzZWFyY2h8M3x8Z2FtaW5nfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="Los Angeles" width="1100" height="500">
+          <div class="carousel-caption">
+            <h3>Hello!</h3>
+            <p>Welcome to my first Portfolio website!</p>
+          </div>   
+        </div>
+        <div class="carousel-item">
+          <img src="https://images.unsplash.com/photo-1534620780923-1ce0db377c3f?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTl8fGdhbWluZ3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=600&q=60" alt="Chicago" width="1100" height="500">
+          <div class="carousel-caption">
+            <h3>Feel Free To Look Around</h3>
+            <p>I hope that by viewing the website, you are able to learn a bit more about me and the experience I have gained.</p>
+          </div>   
+        </div>
+        <div class="carousel-item">
+          <img src="ny.jpg" alt="New York" width="1100" height="500">
+          <div class="carousel-caption">
+            <h3>It's dangerous to go alone, take this!</h3>
+            <p>Please take a moment to click the sign up button, to like and comment!</p>
+          </div>   
+        </div>
+      </div>
+      <a class="carousel-control-prev" href="#demo" data-slide="prev">
+        <span class="carousel-control-prev-icon"></span>
+      </a>
+      <a class="carousel-control-next" href="#demo" data-slide="next">
+        <span class="carousel-control-next-icon"></span>
+      </a>
+    </div>
+    
   </body>
 </html>
