@@ -93,8 +93,7 @@ function reverse(string) {
 ```
 
 ## Issues and Resolutions
- Use this section to list of all major issues encountered and their resolution.
 
-#### SAMPLE.....
-**ERROR**: app.js:34 Uncaught SyntaxError: Unexpected identifier                                
-**RESOLUTION**: Missing comma after first object in sources {} object
+
+**ERROR**: Created a carousel in bootstrap, but the arrows won't scroll to the next image.                              
+**RESOLUTION**: Used the wrong version of Bootstrap, Entered correct code.
