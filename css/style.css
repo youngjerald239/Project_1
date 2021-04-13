@@ -1,0 +1,46 @@
+li{
+    list-style-type: none;
+    margin: 0 2px;
+    font-size: 12px;
+  }
+
+  a{
+    text-decoration: none;
+    color:indigo;
+    padding: 2px;
+  }
+
+  a:hover{
+    background-color: #C6E9FF;
+  }
+
+  nav{
+    width: 100vw;
+    background-color:grey;
+  }
+
+  ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+  }
+  
+  body{
+    margin: 0;
+  }
+
+  @media only screen and (max-width: 500px) {
+    /*shows elements in a column*/
+    ul{
+      flex-direction: column;
+    }
+    
+    /* deletes margin on top or bottom of the a tag*/
+    li{
+      margin: 0;
+    }
+   /* makes sure that the a tag will take the entire screen*/
+    a{
+      display: block;
+    }
+  }
