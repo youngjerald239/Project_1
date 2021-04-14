@@ -1,5 +1,5 @@
 img {
-    width:200px;
+    width:600px;
     height:600px;
     background-size: cover;
     
@@ -7,7 +7,20 @@ img {
 }
 .carousel-caption h5 {
     color: purple;
+    font-size: 50px;
+    font-weight: 700;
 }
+
+.carousel-caption {
+    font-size:30px;
+    font-weight: 500;
+    color:rgb(91, 191, 209);
+
+}
+
+
+
+
 
 
 
@@ -25,7 +38,7 @@ figure.snip1104 {
   margin: 10px;
   min-width: 220px;
   max-width: 310px;
-  max-height: 220px;
+  max-height: 400px;
   width: 100%;
   background: #000000;
   color: #fbf8fc;
@@ -150,16 +163,13 @@ body {
 
 .figure {
     display:flex;
+    flex-direction: row;
+    flex-wrap: wrap;
     justify-content: center;
 }
 
 @media only screen and (max-width: 500px) {
-    nav i.fas.fa-bars {
-        display:block;
-    }
-    nav ul {
-        display:none;
-    }
+ 
 }
 
 @media only screen and (min-width: 768px) {
