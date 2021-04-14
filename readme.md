@@ -97,3 +97,6 @@ function reverse(string) {
 
 **ERROR**: Created a carousel in bootstrap, but the arrows won't scroll to the next image.                              
 **RESOLUTION**: Used the wrong version of Bootstrap, Entered correct code.
+
+**ERROR**: Unable to make the figcaptions appear in a row, below the carousel.                    
+**RESOLUTION**: 
