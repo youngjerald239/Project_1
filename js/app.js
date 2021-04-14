@@ -26,8 +26,7 @@ $.ajax("https://spreadsheets.google.com/feeds/list/1efSoAmD6-TKCf6zbGoOL6m4YriP3
     //jQuery to render your projects below
     /////////////////////////////////////////
 
-
-
+   
 
 
 
