@@ -20,6 +20,7 @@ img {
 
 
 
+
 /* Included color classes.. 
 	.red 
 	.blue 
@@ -33,7 +34,7 @@ figure.snip1104 {
   overflow: hidde;
   margin: 10px;
   min-width: 220px;
-  max-width: 310px;
+  max-width: 330px;
   max-height: 500px;
   width: 100%;
   background: #000000;
@@ -159,9 +160,11 @@ body {
 
 .figure {
     display:flex;
-    flex-direction: row;
+    flex-direction:row;
     flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-around;
+    
+    
 }
 
 
