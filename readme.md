@@ -99,4 +99,4 @@ function reverse(string) {
 **RESOLUTION**: Used the wrong version of Bootstrap, Entered correct code.
 
 **ERROR**: Unable to make the figcaptions appear in a row, below the carousel.                    
-**RESOLUTION**: 
+**RESOLUTION**: Created a seperate div id for figcaptions and put them in their own flex wrap.
