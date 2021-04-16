@@ -56,12 +56,12 @@ Wireframing Resources:
 #### MVP
 | Component | Priority | Estimated Time | Actual Time |
 | --- | :---: |  :---: | :---: | 
-| Hamburger | H | 2hr | hr |
+| Hamburger | H | 2hr | 1hr |
 | Responsive | H | 3hr | hr |
-| Regular Nav | H | 2hr | hr |  
-| Using Boostrap | H | 4hr|  hr | 
-| Other sections and flex| M | 3hr | hr|
-| Working with API | H | 3hrs|  hr | 
+| Regular Nav | H | 2hr | 1hr |  
+| Using Boostrap | H | 4hr|  3hr | 
+| Other sections and flex| M | 3hr | 4hr|
+| Working with API | H | 3hrs|  4hr | 
 | Using Shoelace | H | 4hr | hr | hr |
 | Social Media Icons | L | 3hr |  hr |
 | Total | H | 24hrs| hrs |
@@ -75,7 +75,7 @@ Wireframing Resources:
 | Materialize | H | 4hr | -hr | hr |
 | Adding icon Animations | H | 4hr | hr |
 | Project description on hover | L | 4hr | hr |
-|Sign up page| L | 4hr | hr |
+|Sign up page| L | 4hr | 2hr |
 |Discussion box under projects | L | 4hr | hr |
 | Total | H | 29hrs| hrs |
 
@@ -84,13 +84,34 @@ Wireframing Resources:
 
 ## Code Snippet
 
-Use this section to include a brief code snippet of functionality that you are proud of an a brief description  
+This code allows the register form to show alerts, depending on what was entered and if it was entered correctly. 
 
-```
-function reverse(string) {
-	// here is the code to reverse a string of text
-}
-```
+$(document).ready(function() {
+  $("#register").click(function() {
+  var name = $("#name").val();
+  var email = $("#email").val();
+  var password = $("#password").val();
+  var cpassword = $("#cpassword").val();
+  if (name == '' || email == '' || password == '' || cpassword == '') {
+  alert("Please fill all fields...!!!!!!");
+  } else if ((password.length) < 8) {
+  alert("Password should atleast 8 character in length...!!!!!!");
+  } else if (!(password).match(cpassword)) {
+  alert("Your passwords don't match. Try again?");
+  } else {
+  $.post("register.php", {
+  name1: name,
+  email1: email,
+  password1: password
+  }, function(data) {
+  if (data == 'You have Successfully Registered.....') {
+  $("form")[0].reset();
+  }
+  alert(data);
+  });
+  }
+  });
+  });
 
 ## Issues and Resolutions
 
@@ -100,3 +121,7 @@ function reverse(string) {
 
 **ERROR**: Unable to make the figcaptions appear in a row, below the carousel.                    
 **RESOLUTION**: Created a seperate div id for figcaptions and put them in their own flex wrap.
+
+**ERROR**: Unable to append project to DOM, The content was not properly posting from imgur
+
+**RESOLUTION**: switched to cloudinary and updated the google spreadsheet.
