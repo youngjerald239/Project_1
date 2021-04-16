@@ -26,25 +26,27 @@ $.ajax("https://spreadsheets.google.com/feeds/list/1efSoAmD6-TKCf6zbGoOL6m4YriP3
     //jQuery to render your projects below
     /////////////////////////////////////////
 
-     $("figure").mouseleave(
-        function() {
-          $(this).removeClass("hover");
-        }
-      );
+    //  $("figure").mouseleave(
+    //     function() {
+    //       $(this).removeClass("hover");
+    //     }
+    //   );
 
-      for (i = 0; i < projects.length; ++i) {
+      for (i = 0; i < projects.length; i+=1) {
         //   const project = projects[i]
-        const $div = $("figure").addClass("snip1104")
+        const $div = $("<figure>")
         
 
-        const $img = $("<img src=''>")
+        const $img = $("<img>").attr("src", projects[i].image)
         $($div).append($img)
+        console.log(projects[i].image)
+        // const $fig = $("<figcaption>")
+        // $($div).append($fig)
 
-        const $fig = $("<figcaption>")
-        $($div).append($fig)
-
-        const $a = $("<a href=''>")
+        const $a = $("<a>").attr("href", projects[i].liveurl)
         $($div).append($a)
+
+        $(".projects").append($div)
           
     }
   
