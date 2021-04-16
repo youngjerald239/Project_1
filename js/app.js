@@ -26,11 +26,11 @@ $.ajax("https://spreadsheets.google.com/feeds/list/1efSoAmD6-TKCf6zbGoOL6m4YriP3
     //jQuery to render your projects below
     /////////////////////////////////////////
 
-    //  $("figure").mouseleave(
-    //     function() {
-    //       $(this).removeClass("hover");
-    //     }
-    //   );
+     $("figure").mouseleave(
+        function() {
+          $(this).removeClass("hover");
+        }
+      );
 
       for (i = 0; i < projects.length; i+=1) {
         //   const project = projects[i]

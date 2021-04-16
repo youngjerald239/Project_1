@@ -133,11 +133,11 @@ background: linear-gradient(#36caf0 5%, #22abe9 100%);
 	.yellow 
 */
 
-/* @import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
+@import url(https://fonts.googleapis.com/css?family=Raleway:400,800);
 figure.snip1104 {
   font-family: 'Raleway', Arial, sans-serif;
   position: relative;
-  overflow: hidde;
+  overflow: hidden;
   margin: 10px;
   min-width: 220px;
   max-width: 330px;
@@ -147,6 +147,7 @@ figure.snip1104 {
   color: #fbf8fc;
   text-align: center;
   box-shadow: 0 0 5px rgba(0, 0, 0, 0.15);
+  
   
 }
 
@@ -266,11 +267,11 @@ body {
 
 .figure {
     display:flex;
-    flex-direction:row;
-    flex-wrap: wrap;
+    justify-content: center;
     
     
     
-} */
+    
+}
 
 
