@@ -15,7 +15,7 @@ $.ajax("https://spreadsheets.google.com/feeds/list/1efSoAmD6-TKCf6zbGoOL6m4YriP3
             giturl: item.gsx$giturl.$t,
             image: item.gsx$image.$t,
             liveurl: item.gsx$liveurl.$t,
-            project: item.gsx$project.$t
+            project: item.gsx$project.$t,
 
         }
 
@@ -35,7 +35,7 @@ $.ajax("https://spreadsheets.google.com/feeds/list/1efSoAmD6-TKCf6zbGoOL6m4YriP3
       for (i = 0; i < projects.length; i+=1) {
         //   const project = projects[i]
         const $div = $("<figure>")
-     
+
         const $img = $("<img>").attr("src", projects[i].image)
         $($div).append($img)
         console.log(projects[i].image)
@@ -46,13 +46,14 @@ $.ajax("https://spreadsheets.google.com/feeds/list/1efSoAmD6-TKCf6zbGoOL6m4YriP3
         $($div).append($a)
 
         $(".projects").append($div)
-          
+        
     }
   
 
 ///////////////////////////////////////////////
 
-
+const $git = $("<a>").attr("href", projects[i].giturl)
+        $($div).append($giturl) 
 
 ////////////////////////////////////////////////
 
