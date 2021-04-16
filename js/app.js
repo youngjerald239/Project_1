@@ -35,7 +35,6 @@ $.ajax("https://spreadsheets.google.com/feeds/list/1efSoAmD6-TKCf6zbGoOL6m4YriP3
       for (i = 0; i < projects.length; i+=1) {
         //   const project = projects[i]
         const $div = $("<figure>")
-        
 
         const $img = $("<img>").attr("src", projects[i].image)
         $($div).append($img)
@@ -45,6 +44,7 @@ $.ajax("https://spreadsheets.google.com/feeds/list/1efSoAmD6-TKCf6zbGoOL6m4YriP3
 
         const $a = $("<a>").attr("href", projects[i].liveurl)
         $($div).append($a)
+
 
         $(".projects").append($div)
           
@@ -60,7 +60,32 @@ $.ajax("https://spreadsheets.google.com/feeds/list/1efSoAmD6-TKCf6zbGoOL6m4YriP3
 
 })
 
-
+$(document).ready(function() {
+  $("#register").click(function() {
+  var name = $("#name").val();
+  var email = $("#email").val();
+  var password = $("#password").val();
+  var cpassword = $("#cpassword").val();
+  if (name == '' || email == '' || password == '' || cpassword == '') {
+  alert("Please fill all fields...!!!!!!");
+  } else if ((password.length) < 8) {
+  alert("Password should atleast 8 character in length...!!!!!!");
+  } else if (!(password).match(cpassword)) {
+  alert("Your passwords don't match. Try again?");
+  } else {
+  $.post("register.php", {
+  name1: name,
+  email1: email,
+  password1: password
+  }, function(data) {
+  if (data == 'You have Successfully Registered.....') {
+  $("form")[0].reset();
+  }
+  alert(data);
+  });
+  }
+  });
+  });
 
 
 
