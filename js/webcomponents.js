@@ -18,4 +18,4 @@
 // Register the HTML Tag here
 /////////////////////////////////
 
-customElements.define("template-example", TemplateExample)
+// customElements.define("template-example", TemplateExample)

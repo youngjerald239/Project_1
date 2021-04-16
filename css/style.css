@@ -1,3 +1,48 @@
+@media only screen and (max-width: 500px) {
+    nav i.fas.fa-bars {
+        display:block;
+    }
+    nav ul {
+        display:none;
+    }
+}
+
+@media only screen and (min-width: 768px) {
+	header .wrapper .article h1 span.arrow {
+		display: none;
+	}
+	header .wrapper .article .description {
+		max-height: 300px;
+	}
+	section.dashboard .slick-list .slick-track {
+		display: flex;
+	}
+	section.dashboard .slick-list .slide {
+		opacity: 1;
+	}
+}
+
+@media only screen and (min-width: 1024px) {
+	.container header .menu-icon {
+		display: none;
+	}
+	.container header .header-nav-area #nav_container {
+		display: flex;
+	}
+	.container header .wrapper {
+		text-align: left;
+		margin-left: 5%;
+		width: 480px;
+	}
+	section.dashboard .slick-list .slick-track[index='2'] {
+		display: flex;
+	}
+	section.dashboard .slick-list .slide {
+		opacity: 1;
+	}
+}
+
+
 img {
     width:600px;
     height:600px;

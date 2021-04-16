@@ -33,8 +33,19 @@ $.ajax("https://spreadsheets.google.com/feeds/list/1efSoAmD6-TKCf6zbGoOL6m4YriP3
       );
 
       for (i = 0; i < projects.length; ++i) {
-          const project = projects[i]
-          console.log(project)
+        //   const project = projects[i]
+        const $div = $("figure").addClass("snip1104")
+        
+
+        const $img = $("<img src=''>")
+        $($div).append($img)
+
+        const $fig = $("<figcaption>")
+        $($div).append($fig)
+
+        const $a = $("<a href=''>")
+        $($div).append($a)
+          
     }
   
 
@@ -55,6 +66,6 @@ $.ajax("https://spreadsheets.google.com/feeds/list/1efSoAmD6-TKCf6zbGoOL6m4YriP3
 
 
 //.catch in case of an error
-.catch((error) => {
-    console.error(error)
-})
+// .catch((error) => {
+//     console.error(error)
+// })
