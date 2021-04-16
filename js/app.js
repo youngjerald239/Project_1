@@ -35,16 +35,15 @@ $.ajax("https://spreadsheets.google.com/feeds/list/1efSoAmD6-TKCf6zbGoOL6m4YriP3
       for (i = 0; i < projects.length; i+=1) {
         //   const project = projects[i]
         const $div = $("<figure>")
-
+     
         const $img = $("<img>").attr("src", projects[i].image)
         $($div).append($img)
         console.log(projects[i].image)
         // const $fig = $("<figcaption>")
         // $($div).append($fig)
-
+       
         const $a = $("<a>").attr("href", projects[i].liveurl)
         $($div).append($a)
-
 
         $(".projects").append($div)
           
